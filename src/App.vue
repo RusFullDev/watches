@@ -70,11 +70,13 @@ data(){
   </div>
   
   <div class="grid grid-cols-3 gap-5 mt-[73px] pb-[135px]">
-    <div v-for="item,index in watches":key="index" class="w-354px h-239px bg-[#F6F6F6] rounded-[22px] flex items-center gap-[26px]">
-<div class="text-[Inter]">
+    <div v-for="item,index in watches":key="index" class="w-354px h-239px bg-[#F6F6F6] rounded-[22px] gap-[26px] ">
+<div class="text-[Inter] flex gap-8 pl-10 py-10 w-[354px]">
   <img :src="item.img" alt="">
+  <div class="w-[173px]">
 <h3 class="text-[#1E1D1D] font-bold text-4xl">{{ item.name }}</h3>
 <p class="text-[#8B8E99] text-base font-medium">{{ item.describe }}</p>
+</div>
 </div>
     </div>
   </div>
